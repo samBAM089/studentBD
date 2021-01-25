@@ -15,11 +15,16 @@ public class StudentDB {
         return this.students;
 
     }
-    public String toString(){
+
+    public String toString() {
         String result = "";
         for (int i = 0; i < this.students.length; i++) {
-            result += this.students[i].getFirstName()
+            result += this.students[i].getFirstName() + " has matriculationnumber "
+                    + this.students[i].getMatriculationNumber() + " and is "
+                    + this.students[i].getGender() + ", ";
         }
+        return result;
+
 
     }
 
